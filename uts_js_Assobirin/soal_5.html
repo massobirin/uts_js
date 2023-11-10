@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soal 5</title>
+</head>
+<body>
+
+    <button id="tampilUlar">Ular</button>
+    <button id="tampilAnjing">Anjing</button>
+    <button id="tampilKucing">kucing</button>
+    <button id="tampilBurung">Burung</button>
+    <img id="gambar" src="">
+
+    <script>
+        const btnGambarUlar = document.getElementById("tampilUlar");
+        const btnGambarAnjing = document.getElementById("tampilAnjing");
+        const btnGambarKucing = document.getElementById("tampilKucing");
+        const btnGambarBurung = document.getElementById("tampilBurung");
+
+        function tampilUlar(){
+            let image = document.getElementById("gambar");
+            image.src = "image/Ular.png";
+        }
+
+        function tampilAnjing(){
+            let image = document.getElementById("gambar");
+            image.src = "image/anjing.jpeg";
+        }
+
+        function tampilKucing(){
+            let image = document.getElementById("gambar");
+            image.src = "image/kucing.jpeg";
+        }
+
+        function tampilBurung(){
+            let image = document.getElementById("gambar");
+            image.src = "image/burung.jpeg";
+        }
+
+         btnGambarUlar.addEventListener("click", tampilUlar);
+        btnGambarAnjing.addEventListener("click", tampilAnjing);
+        btnGambarKucing.addEventListener("click", tampilKucing);
+        btnGambarBurung.addEventListener("click", tampilBurung);
+
+    </script>
+    
+</body>
+</html>
